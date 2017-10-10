@@ -53,7 +53,7 @@ Endpoints Available:
 This project contains an Embedded gradle. 
 In a terminal, navigate to the project folder and run:
 
-`./gradlew bootRun`
+`mvn spring-boot:run`
 
 Then, you can login:
 
@@ -62,5 +62,21 @@ Then, you can login:
 
 Try any of the combinations:
 
-* User role: user/test1234
-* Admin role: admin/test1234
+* User role: user/test123
+* Admin role: admin/test123
+
+They are configured in WebSecurityConfig.java:
+
+
+```
+    @Autowired
+    public void configureAuthentication(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
+        //Default users to grant access
+        authenticationManagerBuilder
+            .inMemoryAuthentication()
+            .withUser("user").password("test123").authorities("USER").and()
+            .withUser("admin").password("test123").authorities("ADMIN");
+
+        authenticationManagerBuilder.authenticationProvider(authenticationProvider);
+    }
+```
