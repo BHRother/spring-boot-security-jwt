@@ -50,10 +50,18 @@ Endpoints Available:
 
 
 ## Running the Example
-This project contains an Embedded gradle. 
+This project contains an Embedded maven. 
 In a terminal, navigate to the project folder and run:
 
-`mvn spring-boot:run`
+On Linux:
+```
+./mvnw clean spring-boot:run
+```
+On Windows
+```
+mvnw.cmd clean spring-boot:run
+```
+
 
 Then, you can login:
 
