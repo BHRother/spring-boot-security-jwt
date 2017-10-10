@@ -18,7 +18,7 @@ You can login using two ways:
 ``` 
 { 
   "username" : "user"
-  "password" : "test1234
+  "password" : "test123"
 }
 ```
 2 - Calling the endpoint /loginForm that SpringSecurity offers and we config in WebSecurityConfig class.<br/> 
