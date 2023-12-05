@@ -1,5 +1,5 @@
 # Spring-Boot-Security-Jwt
-Project using Spring Boot + Security + JWT for REST endpoints authentication / authorization.
+TEST - Project using Spring Boot + Security + JWT for REST endpoints authentication / authorization.
 
 
 ## About the example
